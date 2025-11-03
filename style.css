@@ -1,0 +1,379 @@
+/* ========== Global Styles ========== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: #fff;
+  color: #333;
+  line-height: 1.6;
+}
+/* ========== Navbar ========== */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  background: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.logo span {
+  color: #e86a43ff;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+.nav-links li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  transition: 0.3s;
+}
+.nav-links li a:hover {
+  color: rgb(252, 92, 43);
+}
+
+/* Mobile Menu Button */
+.menu-toggle {
+  display: none;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+/* Responsive Navbar */
+@media (max-width: 768px) {
+  .nav-links {
+    position: absolute;
+    top: 60px;
+    right: 0;
+    background: #fff;
+    width: 200px;
+    height: 0;
+    overflow: hidden;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: height 0.3s ease-in-out;
+  }
+  .nav-links.active {
+    height: 200px;
+    padding: 20px 0;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+}
+
+/* Smooth Scroll Effect */
+html {
+  scroll-behavior: smooth;
+}
+/* Cart Icon */
+.cart {
+  font-size: 1.2rem;
+  cursor: pointer;
+  position: relative;
+}
+#cart-count {
+  background: #e86a43ff;
+  color: white;
+  font-size: 0.8rem;
+  padding: 2px 6px;
+  border-radius: 50%;
+  position: absolute;
+  top: -8px;
+  right: -12px;
+}
+
+/* Add to Cart Button */
+.btn-add-cart {
+  background: #333;
+  color: #fff;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: 0.3s;
+}
+.btn-add-cart:hover {
+  background: #e86a43ff;
+}
+
+/* Common Reusable Classes */
+.section-title {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.section-description {
+  text-align: center;
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 30px;
+}
+
+.Flowers-text-span {
+  color: #e86a43ff;
+  font-weight: bold;
+}
+
+.btn-primary {
+  background: #e86a43ff;
+  color: #fff;
+  border: none;
+  padding: 12px 25px;
+  font-size: 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.btn-primary:hover {
+  background: #e86a43ff;
+}
+
+/* ========== Header Section ========== */
+.heading-section {
+  text-align: center;
+  padding: 100px 20px;
+  background: url("../Flowershop/banner.jpg") no-repeat center/cover;
+  color: rgb(0, 0, 0);
+}
+.heading-section h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+.heading-section p {
+  font-size: 1.1rem;
+  margin-bottom: 20px;
+}
+
+/* ========== Featured Flowers ========== */
+.featured-section {
+  padding: 60px 20px;
+}
+.flower-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.flower-card {
+  width: 250px;
+  text-align: center;
+  padding: 20px;
+  border-radius: 12px;
+  transition: 0.3s;
+}
+.flower-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+.flower-img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 15px;
+}
+.flower-name {
+  font-weight: bold;
+}
+.pink-bg {
+  background: rgb(253, 203, 187);
+}
+.blue-bg {
+  background: #e2f0fb;
+}
+.green-bg {
+  background: #e2f7e1;
+}
+
+/* ========== Services Section ========== */
+.services-section {
+  padding: 40px 20px;
+  background: #f8f8f8;
+}
+.service-box {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+.service-item {
+  text-align: center;
+  max-width: 200px;
+}
+.service-item img {
+  width: 60px;
+  margin-bottom: 10px;
+}
+
+/* ========== Deal Section ========== */
+.deal-section {
+  padding: 60px 20px;
+  background: #fde2e4;
+  text-align: center;
+}
+.deal-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+.deal-text {
+  max-width: 400px;
+}
+.deal-text h2 span {
+  color: #e86a43ff;
+}
+.deal-image img {
+  max-width: 300px;
+  border-radius: 12px;
+}
+
+/* ========== Instagram Section ========== */
+.instagram-section {
+  padding: 60px 20px;
+  text-align: center;
+}
+.image-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 15px;
+  margin-top: 20px;
+}
+.image-gallery img {
+  width: 100%;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+.image-gallery img:hover {
+  transform: scale(1.05);
+}
+
+/* ========== Newsletter Section ========== */
+.newsletter {
+  padding: 60px 20px;
+  background: #f8f8f8;
+  text-align: center;
+}
+.form-container {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+.form-container input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  width: 250px;
+}
+.form-container button {
+  background: #e86a43ff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+/* ========== About Section ========== */
+.about-section {
+  padding: 60px 20px;
+  text-align: center;
+}
+.about-section img {
+  max-width: 400px;
+  margin-top: 20px;
+  border-radius: 10px;
+}
+
+/* ========== Testimonials Section ========== */
+.testimonials {
+  padding: 60px 20px;
+  background: #fde2e4;
+  text-align: center;
+}
+.testimonial-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+.testimonial-card {
+  background: white;
+  padding: 20px;
+  max-width: 300px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+.testimonial-card h4 {
+  margin-top: 10px;
+  color: #e86a43ff;
+}
+
+/* ========== Contact Section ========== */
+.contact-section {
+  padding: 60px 20px;
+  text-align: center;
+}
+.contact-form {
+  max-width: 500px;
+  margin: 20px auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.contact-form input,
+.contact-form textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+.contact-form button {
+  background: #e86a43ff;
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+.contact-form button:hover {
+  background: #e86a43ff;
+}
+
+/* ========== Footer Section ========== */
+.footer {
+  padding: 40px 20px;
+  background: #333;
+  color: white;
+  text-align: center;
+}
+.footer span {
+  color: #e86a43ff;
+}
+.footer .copyright {
+  font-size: 0.9rem;
+  margin-top: 10px;
+}

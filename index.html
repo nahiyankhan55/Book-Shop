@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flower Shop</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <head>
+    <header class="navbar">
+      <div class="logo">Flower<span>Shop</span></div>
+
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#shop">Shop</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+
+      <!-- Cart Icon -->
+      <div class="cart">🛒 <span id="cart-count">0</span></div>
+
+      <div class="menu-toggle" id="menu-toggle">☰</div>
+    </header>
+    <div class="heading-section background">
+      <h1 class="header">
+        Let's make<br /><span class="Flowers-text-span">beautiful flowers</span>
+        a<br />part of your life.
+      </h1>
+      <p class="description">
+        It is a
+        <span class="Flowers-text-span"
+          >long established fact that a reader</span
+        >
+        will be distracted by the readable<br />content of a page when looking
+        at its layout.
+        <span class="Flowers-text-span">The point of using Lorem Ipsum</span>
+        is<br />that it has a more-or-less normal distribution of letters.
+      </p>
+      <button class="btn-primary">Shop Now</button>
+    </div>
+  </head>
+
+  <body>
+    <section class="featured-section">
+      <h2 class="section-title">
+        Our Featured <span class="Flowers-text-span">Flowers</span>
+      </h2>
+      <p class="section-description">
+        It is a long established fact that a reader will be distracted by the
+        readable content of a page when looking at its layout.
+      </p>
+
+      <div class="flower-container">
+        <div class="flower-card pink-bg">
+          <img src="./Flowershop/14.png" alt="Pink Flower" class="flower-img" />
+          <p class="flower-name">Pink Flower Tree</p>
+          <button class="btn-add-cart" data-product="Pink Flower Tree">
+            Add to Cart
+          </button>
+        </div>
+
+        <div class="flower-card blue-bg">
+          <img
+            src="./Flowershop/02.png"
+            alt="Mixed Flower"
+            class="flower-img"
+          />
+          <p class="flower-name">Pink Flower Tree</p>
+          <button class="btn-add-cart" data-product="Pink Flower Tree">
+            Add to Cart
+          </button>
+        </div>
+
+        <div class="flower-card green-bg">
+          <img
+            src="./Flowershop/12.png"
+            alt="Yellow Flower"
+            class="flower-img"
+          />
+          <p class="flower-name">Pink Flower Tree</p>
+          <button class="btn-add-cart" data-product="Pink Flower Tree">
+            Add to Cart
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section class="services-section">
+      <div class="service-box">
+        <div class="service-item">
+          <img src="./Flowershop/08.png" alt="Delivery Icon" />
+          <p>Same Day Delivery. Click & Collect.</p>
+        </div>
+        <div class="service-item">
+          <img src="./Flowershop/06.png" alt="Fresh Flowers Icon" />
+          <p>Fresh Flowers. Local Growers.</p>
+        </div>
+        <div class="service-item">
+          <img src="./Flowershop/10.png" alt="Support Icon" />
+          <p>24/7 Free Support.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="deal-section">
+      <div class="deal-content">
+        <div class="deal-text">
+          <h2>Hot Deal ! Sale Up To <span>25% Off</span></h2>
+          <p>
+            It is a long established fact that a reader will be distracted by
+            the readable content of a page when looking at its layout.
+          </p>
+          <button class="btn-primary">Sign Up</button>
+        </div>
+        <div class="deal-image">
+          <img src="./Flowershop/05.jpg" alt="Red Flowers" />
+        </div>
+      </div>
+    </section>
+
+    <section class="instagram-section">
+      <h2>Instagram</h2>
+      <p>
+        It is a long established fact that a reader will be distracted by the
+        readable content of a page when looking at its layout.
+      </p>
+
+      <div class="image-gallery">
+        <img src="./Flowershop/09 (4).jpg" alt="Flower 1" />
+        <img src="./Flowershop/09 (1).jpg" alt="Flower 2" />
+        <img src="./Flowershop/09 (3).jpg" alt="Flower 3" />
+        <img src="./Flowershop/09 (2).jpg" alt="Flower 4" />
+      </div>
+    </section>
+
+    <section class="newsletter">
+      <h2>Get The <span class="Flowers-text-span">Latest Deals</span></h2>
+      <p>$30 coupon for first shopping</p>
+      <div class="form-container">
+        <input type="email" placeholder="Enter your email here..." required />
+        <button type="btn-primary">Subscribe</button>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about-section">
+      <h2>About <span class="Flowers-text-span">Us</span></h2>
+      <p>
+        Welcome to FlowerShop – your one-stop destination for fresh flowers,
+        handpicked with love and care. We are passionate about making your
+        moments special with our blossoms.
+      </p>
+      <img
+        src="./Flowershop/flower-store.png"
+        alt="About Flower Shop"
+        class="about-img"
+      />
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+      <h2>What Our <span class="Flowers-text-span">Customers Say</span></h2>
+      <div class="testimonial-container">
+        <div class="testimonial-card">
+          <p>
+            "The flowers were absolutely fresh and beautiful. Delivery was super
+            fast!"
+          </p>
+          <h4>- Sarah J.</h4>
+        </div>
+        <div class="testimonial-card">
+          <p>
+            "Best flower shop in town. Their bouquets make every occasion
+            brighter."
+          </p>
+          <h4>- Michael R.</h4>
+        </div>
+        <div class="testimonial-card">
+          <p>
+            "I loved the arrangement. It was perfect for my wedding
+            anniversary!"
+          </p>
+          <h4>- Ayesha K.</h4>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section">
+      <h2>Contact <span class="Flowers-text-span">Us</span></h2>
+      <p>
+        Have any questions? Send us a message and we'll get back to you soon.
+      </p>
+      <form class="contact-form">
+        <input type="text" placeholder="Your Name" required />
+        <input type="email" placeholder="Your Email" required />
+        <textarea placeholder="Your Message" rows="4" required></textarea>
+        <button type="submit" class="btn-primary">Send Message</button>
+      </form>
+    </section>
+
+    <body>
+      <footer class="footer">
+        <h2><span>Flower</span>Shop</h2>
+        <p>
+          It is a long established fact that a reader will be distracted by the
+          readable
+        </p>
+        <p>content of a page when looking at its layout.</p>
+        <p class="copyright">All rights reserved. Design By Nahiyan</p>
+      </footer>
+    </body>
+  </body>
+  <script src="./script.js"></script>
+</html>
