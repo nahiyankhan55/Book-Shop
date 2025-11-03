@@ -383,3 +383,93 @@ html {
   height: 20px;
   cursor: pointer;
 }
+
+#cart-count.bump {
+  animation: bump 0.3s ease;
+}
+
+@keyframes bump {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.3);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* ====== Mobile Menu Styling ====== */
+.nav-links {
+  position: fixed;
+  top: 0;
+  right: -100%;
+  width: 70%;
+  height: 100%;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  box-shadow: -2px 0 10px rgba(0, 0, 0, 0.2);
+  transition: right 0.4s ease-in-out;
+  z-index: 999;
+}
+
+.nav-links.active {
+  right: 0;
+}
+
+/* Close button inside the menu */
+.close-btn {
+  position: absolute;
+  top: 20px;
+  right: 25px;
+  font-size: 28px;
+  cursor: pointer;
+  color: #333;
+  transition: transform 0.2s;
+}
+.close-btn:hover {
+  transform: scale(1.2);
+}
+
+/* Hide menu toggle on large screens */
+@media (min-width: 768px) {
+  .nav-links {
+    position: static;
+    flex-direction: row;
+    background: none;
+    height: auto;
+    box-shadow: none;
+    gap: 15px;
+    transition: none;
+  }
+
+  .close-btn {
+    display: none;
+  }
+
+  #menu-toggle {
+    display: none;
+  }
+}
+
+/* Bump animation for cart */
+#cart-count.bump {
+  animation: bump 0.3s ease;
+}
+
+@keyframes bump {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.3);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
