@@ -29,7 +29,7 @@ body {
   font-weight: bold;
 }
 .logo span {
-  color: #e86a43ff;
+  color: rgb(111, 67, 232);
 }
 
 .nav-links {
@@ -44,7 +44,7 @@ body {
   transition: 0.3s;
 }
 .nav-links li a:hover {
-  color: rgb(252, 92, 43);
+  color: rgb(111, 67, 232);
 }
 
 /* Mobile Menu Button */
@@ -91,7 +91,7 @@ html {
   position: relative;
 }
 #cart-count {
-  background: #e86a43ff;
+  background: rgb(111, 67, 232);
   color: white;
   font-size: 0.8rem;
   padding: 2px 6px;
@@ -113,7 +113,7 @@ html {
   transition: 0.3s;
 }
 .btn-add-cart:hover {
-  background: #e86a43ff;
+  background: rgb(111, 67, 232);
 }
 
 /* Common Reusable Classes */
@@ -131,12 +131,12 @@ html {
 }
 
 .Flowers-text-span {
-  color: #e86a43ff;
+  color: rgb(111, 67, 232);
   font-weight: bold;
 }
 
 .btn-primary {
-  background: #e86a43ff;
+  background: rgb(111, 67, 232);
   color: #fff;
   border: none;
   padding: 12px 25px;
@@ -146,7 +146,7 @@ html {
   transition: 0.3s;
 }
 .btn-primary:hover {
-  background: #e86a43ff;
+  background: rgb(111, 67, 232);
 }
 
 /* ========== Header Section ========== */
@@ -195,13 +195,13 @@ html {
   font-weight: bold;
 }
 .pink-bg {
-  background: rgb(253, 203, 187);
+  background: rgb(232, 224, 255);
 }
 .blue-bg {
-  background: #e2f0fb;
+  background: rgb(192, 170, 253);
 }
 .green-bg {
-  background: #e2f7e1;
+  background: rgb(232, 224, 255);
 }
 
 /* ========== Services Section ========== */
@@ -227,7 +227,7 @@ html {
 /* ========== Deal Section ========== */
 .deal-section {
   padding: 60px 20px;
-  background: #fde2e4;
+  background: rgb(233, 225, 255);
   text-align: center;
 }
 .deal-content {
@@ -241,7 +241,7 @@ html {
   max-width: 400px;
 }
 .deal-text h2 span {
-  color: #e86a43ff;
+  color: rgb(111, 67, 232);
 }
 .deal-image img {
   max-width: 300px;
@@ -288,7 +288,7 @@ html {
   width: 250px;
 }
 .form-container button {
-  background: #e86a43ff;
+  background: rgb(111, 67, 232);
   color: white;
   border: none;
   padding: 10px 20px;
@@ -310,7 +310,7 @@ html {
 /* ========== Testimonials Section ========== */
 .testimonials {
   padding: 60px 20px;
-  background: #fde2e4;
+  background: rgb(233, 225, 255);
   text-align: center;
 }
 .testimonial-container {
@@ -329,7 +329,7 @@ html {
 }
 .testimonial-card h4 {
   margin-top: 10px;
-  color: #e86a43ff;
+  color: rgb(111, 67, 232);
 }
 
 /* ========== Contact Section ========== */
@@ -351,7 +351,7 @@ html {
   border-radius: 6px;
 }
 .contact-form button {
-  background: #e86a43ff;
+  background: rgb(111, 67, 232);
   color: white;
   border: none;
   padding: 12px;
@@ -360,20 +360,26 @@ html {
   font-size: 1rem;
 }
 .contact-form button:hover {
-  background: #e86a43ff;
+  background: rgb(111, 67, 232);
 }
 
 /* ========== Footer Section ========== */
 .footer {
   padding: 40px 20px;
-  background: #333;
-  color: white;
+  background: #d6d6d6;
+  color: rgb(0, 0, 0);
   text-align: center;
 }
 .footer span {
-  color: #e86a43ff;
+  color: rgb(111, 67, 232);
 }
 .footer .copyright {
   font-size: 0.9rem;
   margin-top: 10px;
+}
+
+.footer-social img {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
 }
